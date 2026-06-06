@@ -1,68 +1,119 @@
+
 <html>
 <head>
-  <!-- Link the style sheet here -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+
+<body style="background-color: #f4f6f9;">
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in;">
     <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
+        <h2 style="padding-right: 5%; font-weight: bold;">Best Cars Dealership</h2>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarText">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+                </li>
+            </ul>
         </div>
-      </div>
     </div>
+</nav>
+
+<div class="card shadow" style="width: 85%; margin: auto; margin-top: 40px; border-radius: 15px;">
+
+    <div class="banner text-center text-white"
+         style="background: linear-gradient(135deg, #00bcd4, #007bff); padding: 50px;">
+        <h1>About Us</h1>
+
+        <p style="font-size: 18px;">
+            Welcome to Best Cars Dealership, home to some of the finest vehicles in North America.
+            We specialize in offering both domestic and imported cars at competitive prices.
+        </p>
+
+        <p style="font-size: 16px;">
+            For over 15 years, we have helped thousands of customers find reliable, affordable,
+            and high-quality vehicles. Our team is committed to providing exceptional customer
+            service and a hassle-free car buying experience.
+        </p>
     </div>
+
+    <div style="display:flex; justify-content:space-around; flex-wrap:wrap; padding:30px;">
+
+        <!-- Team Member 1 -->
+        <div class="card shadow-sm" style="width:30%; min-width:250px; margin:10px;">
+            <img class="card-img-top"
+                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600"
+                 alt="Michael Johnson">
+
+            <div class="card-body text-center">
+                <h4>Michael Johnson</h4>
+                <p class="title text-primary">Founder & CEO</p>
+
+                <p class="card-text">
+                    Michael has over 20 years of experience in the automotive industry
+                    and has built Best Cars into one of the most trusted dealerships
+                    in North America.
+                </p>
+
+                <p>michael@bestcars.com</p>
+            </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="card shadow-sm" style="width:30%; min-width:250px; margin:10px;">
+            <img class="card-img-top"
+                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600"
+                 alt="Sarah Williams">
+
+            <div class="card-body text-center">
+                <h4>Sarah Williams</h4>
+                <p class="title text-primary">Sales Manager</p>
+
+                <p class="card-text">
+                    Sarah leads our sales team and ensures every customer receives
+                    professional guidance when selecting the perfect vehicle.
+                </p>
+
+                <p>sarah@bestcars.com</p>
+            </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="card shadow-sm" style="width:30%; min-width:250px; margin:10px;">
+            <img class="card-img-top"
+                 src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600"
+                 alt="David Brown">
+
+            <div class="card-body text-center">
+                <h4>David Brown</h4>
+                <p class="title text-primary">Customer Relations Manager</p>
+
+                <p class="card-text">
+                    David works closely with customers to ensure satisfaction before,
+                    during, and after every vehicle purchase.
+                </p>
+
+                <p>david@bestcars.com</p>
+            </div>
+        </div>
+
     </div>
-    
+
 </div>
 
+</body>
 </html>
+```
