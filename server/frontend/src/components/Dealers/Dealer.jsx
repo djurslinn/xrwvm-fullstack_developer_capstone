@@ -32,7 +32,11 @@ const Dealer = () => {
     
     if(retobj.status === 200) {
       let dealerobjs = Array.from(retobj.dealer)
-      setDealer(dealerobjs[0])
+      if (dealerobjs.length > 0) {
+        setDealer(dealerobjs[0])
+      } else {
+        setDealer(retobj.dealer)
+      }
     }
   }
 

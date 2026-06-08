@@ -34,7 +34,7 @@ const PostReview = () => {
 
     let model_split = model.split(" ");
     let make_chosen = model_split[0];
-    let model_chosen = model_split[1];
+    let model_chosen = model_split.slice(1).join(" ");
 
     let jsoninput = JSON.stringify({
       "name": name,
@@ -70,8 +70,11 @@ const PostReview = () => {
     
     if(retobj.status === 200) {
       let dealerobjs = Array.from(retobj.dealer)
-      if(dealerobjs.length > 0)
+      if(dealerobjs.length > 0) {
         setDealer(dealerobjs[0])
+      } else {
+        setDealer(retobj.dealer)
+      }
     }
   }
 
