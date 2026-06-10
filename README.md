@@ -6,6 +6,9 @@
 This project is a Full Stack Developer Capstone application that demonstrates the development, deployment, and management of a modern web application using frontend technologies, backend services, databases, containers, and cloud-native deployment practices.
 
 The application provides dealership management functionality, allowing users to browse dealerships, view dealer information, and interact with backend services through a RESTful architecture.
+# xrwvm-fullstack_developer_capstone
+
+This repository contains the Full Stack Developer Capstone project, including backend services, deployment configurations, and application source code.
 
 ## Features
 
